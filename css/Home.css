@@ -129,130 +129,152 @@ body {
   height: 100vh;
   text-align: center;
 }
+/*-----------------------------Cards--------------------*/
 .services-cards {
   display: flex;
   padding: 50px;
 }
-.container-2-title{
+.container-2-title {
   margin-top: 100px;
   margin-left: 50px;
 }
-.card-logo-design{
+.card-logo-design {
   background-image: url(/img/Logo-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
 }
-.card-voice-over{
+.card-voice-over {
   background-image: url(/img/VoiceOver.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-wordpress{
+.card-wordpress {
   background-image: url(/img/Logo-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-wordpress{
+.card-wordpress {
   background-image: url(/img/WordpressDev.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-programming{
+.card-programming {
   background-image: url(/img/Programming.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-blockchain-development{
+.card-blockchain-development {
   background-image: url(/img/008_4x.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-logo-design,
-.card-voice-over,
-.card-programming,
-.card-wordpress,
-.card-blockchain-development {
+.card {
   width: 350px;
   height: 345px;
   margin: 20px;
   border-radius: 25px;
+  cursor: pointer;
+  position: relative;
 }
-.container-2 h6, h4 {
-  font-family: 'Roboto Condensed', sans-serif;
+.container-2 h6,
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
   margin-top: 25px;
   color: white;
   cursor: pointer;
-
-}  
-.container-2 h4{
-  font-size: 40px; 
 }
-.container-2 h6{
-  font-size: 15px;  
+.container-2 h4 {
+  font-size: 30px;
 }
-.card-logo-design:hover h4{
+.container-2 h6 {
+  font-size: 15px;
+}
+.card:hover h4 {
   font-size: 45px;
-  transition:  .5s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-.card-logo-design:hover h6 {
+.card:hover h6 {
   font-size: 20px;
-  transition:  .5s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-.card-logo-design:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+.card:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.822);
   width: 360px;
   height: 355px;
+  transition: 0.25s ease-in-out;
 }
-.card-voice-over:hover h4{
-  font-size: 45px;
-  transition:  .5s ease-in-out;
+.card:hover .btn-services{
+  opacity: 100%;
+  transition: .5s ease-in-out;
 }
-.card-voice-over:hover h6 {
-  font-size: 20px;
-  transition:  .5s ease-in-out;
-}
-.card-voice-over:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
-  width: 360px;
-  height: 355px;
-}
-.card-wordpress:hover h4{
-  font-size: 45px;
-  transition:  .5s ease-in-out;
-}
-.card-wordpress:hover h6 {
-  font-size: 20px;
-  transition:  .5s ease-in-out;
-}
-.card-wordpress:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
-  width: 360px;
-  height: 355px;
+.btn-services {
+  opacity: 0%;
+  border-radius: 4px;
+  background-color: #205375;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-.card-blockchain-development:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
-  width: 360px;
-  height: 355px;
+.btn-services {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  transition: 0.5s;
+  font-size: 20px;
 }
-.card-programming:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
-  width: 360px;
-  height: 355px;
+
+.btn-services:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.25s;
 }
-.explore-freelancers-link{
+
+.btn-services:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.btn-services:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.explore-freelancers-link {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.822);
-  display: flex;
-  justify-content: center;
-  transition: 3s ease-in-out;
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
 }
-.explore-freelancers-link:hover{
-  text-decoration: underline;
+.explore-freelancers-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
 }
-/*------------------------------------------------------------*/
-
+.explore-freelancers-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*-------------------------Footer-----------------------------------*/
 .footer {
   width: 100%;
   height: 522px;
@@ -358,3 +380,4 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
+/*-----------------------------------End--------------------------*/
