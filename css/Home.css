@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1920px;
+  margin: auto;
+}
+.home {
+  background-image: url(/img/freelancerbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+.home-overlay {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(9, 9, 9, 0.003),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url(/img/freelancerbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  height: 62px;
+  position: relative;
+  width: 100%;
+}
+.home-container {
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  justify-content: center;
+  float: left;
+  margin-top: 250px;
+  margin-left: 50px;
+}
+.Find-ServicesINP {
+  width: 250px;
+  height: 40px;
+  border: none;
+}
+.Find-ServicesINP ::placeholder {
+  padding-right: 10px;
+}
+.Find-ServicesBTN {
+  height: 40px;
+  width: 60px;
+  background-color: #f66b0e;
+  border: none;
+  color: rgb(219, 219, 219);
+}
+.Find-ServicesINP,
+.Find-ServicesBTN {
+  margin-top: 30px;
+}
+.Find-ServicesBTN:hover {
+  background-color: #cc5506;
+}
+.home-container h1 {
+  color: #fff;
+  font-family: "Courgette", cursive;
+}
+.header nav {
+  padding-top: 19px;
+}
+.NavMenu .nav-element {
+  font-size: 16px;
+  font-family: "Radio Canada", sans-serif;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
+  color: rgb(255, 255, 255);
+}
+.NavMenu .h1-nav {
+  color: rgb(255, 255, 255);
+  float: left;
+  font-size: x-large;
+  padding-left: 20px;
+}
+.NavMenu {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-content: center;
+}
+.Dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #f66b0e;
+  float: right;
+  margin-top: 20px;
+}
+.SignIn {
+  float: right;
+  width: 100px;
+  height: 30px;
+  background-color: #f66b0e;
+  color: rgb(220, 220, 220);
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.LogIn {
+  float: right;
+  width: 100px;
+  height: 30px;
+  background-color: #205375;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.straightLine {
+  width: 100%;
+  background-color: rgb(118, 118, 118);
+  height: 1px;
+}
+.container-2 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.services-cards {
+  display: flex;
+  padding: 50px;
+}
+.container-2-title{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.card-logo-design{
+  background-image: url(/img/Logo-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.card-voice-over{
+  background-image: url(/img/VoiceOver.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-wordpress{
+  background-image: url(/img/Logo-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-wordpress{
+  background-image: url(/img/WordpressDev.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-programming{
+  background-image: url(/img/Programming.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-blockchain-development{
+  background-image: url(/img/008_4x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-logo-design,
+.card-voice-over,
+.card-programming,
+.card-wordpress,
+.card-blockchain-development {
+  width: 350px;
+  height: 345px;
+  margin: 20px;
+  border-radius: 25px;
+}
+.container-2 h6, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 25px;
+  color: white;
+  cursor: pointer;
+
+}  
+.container-2 h4{
+  font-size: 40px; 
+}
+.container-2 h6{
+  font-size: 15px;  
+}
+.card-logo-design:hover h4{
+  font-size: 45px;
+  transition:  .5s ease-in-out;
+}
+.card-logo-design:hover h6 {
+  font-size: 20px;
+  transition:  .5s ease-in-out;
+}
+.card-logo-design:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+  width: 360px;
+  height: 355px;
+}
+.card-voice-over:hover h4{
+  font-size: 45px;
+  transition:  .5s ease-in-out;
+}
+.card-voice-over:hover h6 {
+  font-size: 20px;
+  transition:  .5s ease-in-out;
+}
+.card-voice-over:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+  width: 360px;
+  height: 355px;
+}
+.card-wordpress:hover h4{
+  font-size: 45px;
+  transition:  .5s ease-in-out;
+}
+.card-wordpress:hover h6 {
+  font-size: 20px;
+  transition:  .5s ease-in-out;
+}
+.card-wordpress:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+  width: 360px;
+  height: 355px;
+}
+
+.card-blockchain-development:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+  width: 360px;
+  height: 355px;
+}
+.card-programming:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+  width: 360px;
+  height: 355px;
+}
+.explore-freelancers-link{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: center;
+  transition: 3s ease-in-out;
+}
+.explore-freelancers-link:hover{
+  text-decoration: underline;
+}
+/*------------------------------------------------------------*/
+
+.footer {
+  width: 100%;
+  height: 522px;
+  background-color: black;
+}
+.footer-top-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@200&family=Oleo+Script+Swash+Caps&family=Radio+Canada:wght@500;700&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@200&family=Radio+Canada:wght@500;700&family=Ubuntu&display=swap");
+.footer-top-content a {
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  display: block;
+}
+.footer-top-content h3 {
+  color: white;
+  font-size: 28px;
+  font-family: "Radio Canada", sans-serif;
+  font-weight: bold 700;
+}
+.LOGO {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.LOGO h5 {
+  color: white;
+  font-family: "Radio Canada", sans-serif;
+}
+.footer-logo {
+  color: white;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: bold 700;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.wrapper .icon i {
+  color: #fff;
+  transition: 0.4s linear;
+}
+.wrapper .icon::before,
+.wrapper .icon::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.4s linear;
+}
+.wrapper .icon:hover::before {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+  color: #fff;
+}
+.wrapper .icon:hover::after {
+  border-radius: 50%;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transform: skewY(-20deg);
+  color: #fff;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
