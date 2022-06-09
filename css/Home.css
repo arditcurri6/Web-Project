@@ -56,7 +56,8 @@ body {
   width: 60px;
   background-color: #f66b0e;
   border: none;
-  color: rgb(219, 219, 219);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 .Find-ServicesINP,
 .Find-ServicesBTN {
@@ -78,6 +79,13 @@ body {
   text-decoration: none;
   padding: 0px 10px 0px 10px;
   color: rgb(255, 255, 255);
+}
+.nav-element{
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .NavMenu .h1-nav {
   color: rgb(255, 255, 255);
@@ -130,6 +138,10 @@ body {
   text-align: center;
 }
 /*-----------------------------Cards--------------------*/
+.container-2{
+  width: 100%;
+  height: 100vh;
+}
 .services-cards {
   display: flex;
   padding: 50px;
@@ -274,6 +286,51 @@ h4 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/* ------------------------FrelancingBussiness---------------------- */
+.freelancing-bussiness{
+  width: 100%;
+  height: 100vh;
+  background-color: #0087ca;
+  color: white;
+}
+
+.freelancing-bussiness h4{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.freelancing-bussiness h1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Mukta', sans-serif;
+
+  padding-top: 60px;
+  font-size: 40px;
+}
+
+.container--1{
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.container-headers{
+  position: absolute;
+  top: 1%;
+  left: 10%;
+
+}
+.container-text{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+
+}
+.list-text{
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+}
 /*-------------------------Footer-----------------------------------*/
 .footer {
   width: 100%;
@@ -379,5 +436,9 @@ h4 {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+.wrapper a {
+  color: white;
+  text-decoration: none;
 }
 /*-----------------------------------End--------------------------*/
