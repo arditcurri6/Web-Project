@@ -291,7 +291,7 @@ h4 {
 .freelancing-bussiness{
   width: 100%;
   height: 100vh;
-  background-color: #0087ca;
+  background-color: #000000;
   color: white;
   display: flex;
 }
@@ -360,7 +360,7 @@ h4 {
   max-width: 200px;
   margin: 66px;
 }
-.header{
+.header-partner{
   margin-top: 35px;
 }
 
